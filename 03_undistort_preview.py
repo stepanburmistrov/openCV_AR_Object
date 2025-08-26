@@ -33,7 +33,6 @@ def main():
             break
         h, w = frame.shape[:2]
 
-        # Подгоняем K, если текущее разрешение отличается от калибровочного
         K_adj = K.copy()
         if (w, h) != (calib_w, calib_h):
             sx = w / calib_w

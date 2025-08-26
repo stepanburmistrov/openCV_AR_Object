@@ -1,4 +1,3 @@
-# 02_calibrate_camera.py
 import cv2
 import numpy as np
 import glob

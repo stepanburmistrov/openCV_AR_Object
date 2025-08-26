@@ -1,15 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-04_detect_aruco_and_cube_follow_v2.py
-- UNDISTORT (alpha=0) + ROI
-- Detect on undistorted view
-- Pose from solvePnPGeneric (IPPE)
-- Orientation lock across IPPE branches
-- ALWAYS extrude cube TOWARD camera (auto z-sign)
-- No HOLD drawing: if marker not detected this frame -> no cube
-- Smoothing: SLERP (rotation) + EMA (translation), weaker on noisy frames
-"""
 
 import argparse
 import cv2
